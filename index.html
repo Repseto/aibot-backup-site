@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Личная утилита шифрованного резервирования базы Telegram-ассистента в Google Диск.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>О проекте · Personal AI Bot Backups</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./"><span aria-hidden="true"></span>Personal AI Bot Backups</a><nav aria-label="Основная навигация"><a href="./">О проекте</a><a href="privacy.html">Конфиденциальность</a></nav></div></header>
+<main id="main" class="wrap">
+<section class="hero" aria-labelledby="title">
+<div><p class="eyebrow">Personal project / Private backups</p><h1 id="title">Личная история.<br>Защищённая копия.</h1><p class="lead">Personal AI Bot Backups — утилита резервного копирования базы персонального Telegram-ассистента в собственный Google Диск владельца.</p><p class="muted">Доступ к Google предоставляется владельцем через OAuth. Содержимое и имена файлов шифруются на сервере до отправки.</p><a class="button" href="privacy.html">Как обрабатываются данные →</a></div>
+<div class="flow" aria-label="Порядок создания резервной копии"><div class="flow-row"><span class="number">01</span><div><strong>Локальная копия</strong><small>Снимок SQLite и проверка целостности.</small></div></div><div class="flow-row"><span class="number">02</span><div><strong>Шифрование</strong><small>rclone crypt защищает содержимое и имена файлов.</small></div></div><div class="flow-row"><span class="number">03</span><div><strong>Собственный Google Диск</strong><small>Проверка загруженных данных и ротация копий.</small></div></div></div>
+</section>
+<section class="section columns"><div><h2>Для одного владельца</h2><p>Это личный проект, а не публичный сервис регистрации или хранения чужих данных. Сайт описывает приложение и его правила работы; здесь нет входа в Google и загрузки файлов.</p></div><div><h2>Ограниченный доступ</h2><p>Интеграция запрашивает разрешение <code>drive.file</code> для создания, чтения, проверки и удаления файлов, созданных этим приложением. Она не запрашивает полный доступ ко всем файлам Диска.</p></div></section>
+<section class="section"><h2>Прозрачная работа с данными</h2><p class="note">Резервная копия может содержать личную историю диалогов, документы, факты и задачи. Ключи расшифровки владелец хранит отдельно. Автоматическая отправка не включает файл секретов и конфигурацию авторизации.</p><p>Подробности: <a href="privacy.html">политика конфиденциальности</a> и <a href="terms.html">условия использования</a>.</p><p class="contact">Владелец проекта: <a href="https://github.com/repseto">repseto</a><br>Связь: <a href="mailto:vyacheslav.amosov@gmail.com">vyacheslav.amosov@gmail.com</a></p></section>
+</main>
+<footer><div class="wrap"><span>Личный проект · <a href="https://github.com/repseto">repseto</a></span><span><a href="privacy.html">Политика конфиденциальности</a> · <a href="terms.html">Условия</a></span></div></footer>
+</body>
+</html>
